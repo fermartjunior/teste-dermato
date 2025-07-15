@@ -1,0 +1,211 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  scroll-behavior: smooth;
+}
+
+.navbar {
+  background: #e9d7d7;
+  color: rgb(216, 82, 82);
+  padding: 30px;
+  display: flex;
+  justify-content: space-evenly;
+  top: 0;
+  box-shadow: 0 4px 8px rgb(65, 64, 64);
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 40px;
+}
+
+.navbar a {
+  color: rgb(80, 78, 78);
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  color: rgb(216, 82, 82);
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+.destaque {
+  display: flex;
+  justify-content: space-evenly;
+
+  padding: 60px;
+  background: #d8d1d1;
+  flex-wrap: wrap;
+}
+
+.imagem {
+  width: 400px;
+}
+
+.destaque .texto {
+  text-align: center;
+  flex: 1;
+  max-width: 400px;
+}
+
+.destaque h1 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 42px;
+  color: rgb(216, 82, 82);
+  margin-bottom: 40px;
+}
+
+.destaque p {
+  font-size: 24px;
+  color: rgb(80, 78, 78);
+}
+
+.destaque .imagem img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.tratamentos {
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  padding: 40px 20px;
+  background: #a06565;
+  flex-wrap: wrap;
+}
+
+.tratamento {
+  text-align: center;
+  margin: 10px;
+  flex: 1;
+  min-width: 120px;
+}
+
+.tratamento img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.sobre,
+.contato {
+  font-size: 20px;
+  color: rgb(80, 78, 78);
+  padding: 40px 70px;
+  background: #e9d7d7;
+  text-align: center;
+}
+
+.sobre h2,
+.contato h2,
+.agendamento h2 {
+  color: rgb(216, 82, 82);
+  margin-bottom: 20px;
+}
+
+.agendamento {
+  font-size: 20px;
+  padding: 40px 70px 80px;
+  background: #f8d3d3;
+  text-align: center;
+}
+
+.btn-agendar {
+  padding: 7px 14px;
+  background: #25D366;
+  color: white;
+  text-decoration: none;
+  border-radius: 34px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.603);
+  margin-bottom: 10px;
+}
+
+.btn-agendar:hover {
+  background-color: #27a355dc;
+}
+
+.agendamento h2 {
+  margin-bottom:  30px;
+}
+
+/* Menu hamburguer */
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 28px;
+  color: rgb(80, 78, 78);
+  cursor: pointer;
+}
+
+/* Menu mobile escondido inicialmente */
+@media (max-width: 768px) {
+  .navbar {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-links {
+    width: 100%;
+    display: none;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .navbar ul {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  .destaque {
+    flex-direction: column;
+    padding: 30px 20px;
+    align-items: center;
+    text-align: center;
+  }
+
+  .imagem {
+    width: 100%;
+    max-width: 350px;
+  }
+
+  .tratamentos {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .tratamento {
+    max-width: 90%;
+  }
+
+  .sobre,
+  .contato,
+  .agendamento {
+    padding: 30px 20px;
+  }
+}
+
