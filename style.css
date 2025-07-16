@@ -38,14 +38,16 @@ body {
 }
 
 .logo {
+  padding: 0px 10px;
   font-weight: bold;
   font-size: 1.5em;
+  border-radius: 10px;
+  border: 1px solid rgb(216, 82, 82);
 }
 
 .destaque {
   display: flex;
   justify-content: space-evenly;
-
   padding: 60px;
   background: #d8d1d1;
   flex-wrap: wrap;
@@ -56,13 +58,13 @@ body {
 }
 
 .destaque .texto {
-  text-align: center;
+  text-align:center;
   flex: 1;
   max-width: 400px;
 }
 
 .destaque h1 {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 42px;
   color: rgb(216, 82, 82);
   margin-bottom: 40px;
@@ -99,14 +101,30 @@ body {
   height: 150px;
   object-fit: cover;
   border-radius: 50%;
+  margin-bottom: 30px;
 }
 
-.sobre,
-.contato {
+.sobre {
   font-size: 20px;
   color: rgb(80, 78, 78);
   padding: 40px 70px;
   background: #e9d7d7;
+  text-align: center;
+}
+
+.contato {
+  font-size: 20px;
+  color: rgb(80, 78, 78);
+  background-color: #f8dada;
+  padding: 40px 70px;
+  text-align: center;
+}
+
+.agendamento {
+  font-size: 20px;
+  color: rgb(80, 78, 78);
+  padding: 40px 70px 80px;
+  background: #f7e5e5;
   text-align: center;
 }
 
@@ -115,13 +133,6 @@ body {
 .agendamento h2 {
   color: rgb(216, 82, 82);
   margin-bottom: 20px;
-}
-
-.agendamento {
-  font-size: 20px;
-  padding: 40px 70px 80px;
-  background: #f8d3d3;
-  text-align: center;
 }
 
 .btn-agendar {
