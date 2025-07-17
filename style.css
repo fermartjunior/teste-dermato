@@ -122,8 +122,7 @@ body {
 
 .agendamento {
   font-size: 20px;
-  color: rgb(80, 78, 78);
-  padding: 40px 70px 80px;
+  padding: 40px 70px 50px;
   background: #f7e5e5;
   text-align: center;
 }
@@ -150,6 +149,14 @@ body {
 
 .agendamento h2 {
   margin-bottom:  30px;
+}
+
+.footer {
+  background: #f7e5e5;
+  color: rgb(112, 110, 110);
+  text-align: center;
+  padding: 20px;
+  position: relative;
 }
 
 /* Menu hamburguer */
