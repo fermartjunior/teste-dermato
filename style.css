@@ -28,13 +28,30 @@ body {
 }
 
 .navbar a {
-  color: rgb(80, 78, 78);
+  color: rgb(124, 123, 123);
   font-size: 20px;
   text-decoration: none;
+  padding-bottom: 4px;
+  position: relative;
 }
 
 .navbar a:hover {
   color: rgb(216, 82, 82);
+}
+
+a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0%;
+  height: 2px;
+  background-color: rgba(216, 82, 82, 0.226);
+  transition: width 0.3s ease;
+}
+
+a:hover::after {
+  width: 100%;
 }
 
 .logo {
