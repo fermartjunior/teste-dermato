@@ -65,19 +65,19 @@ a:hover::after {
 .destaque {
   display: flex;
   justify-content: space-evenly;
-  padding: 60px;
+  align-items: center;
+  padding: 20px;
   background: #d8d1d1;
-  flex-wrap: wrap;
 }
 
 .imagem {
-  width: 400px;
+  width: 600px;
 }
 
 .destaque .texto {
   text-align:center;
   flex: 1;
-  max-width: 400px;
+  max-width: 450px;
 }
 
 .destaque h1 {
